@@ -4,7 +4,7 @@
 ### columns
 |  column  |    type      | options |
 | -------- | ------------ | ------- |
-| name     | string       | null: false, unique: true, add_index |
+| name     | string       | null: false, unique: true, add_index: true |
 
 ### Association
 - has_many :users_groups
@@ -35,7 +35,7 @@
 - belongs_to :user
 - belongs_to :group
 
-## users_groups
+## user_groups
 ### columns
 | column |    type    |      options      |
 | ------ | ---------- | ----------------- |
