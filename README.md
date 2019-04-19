@@ -2,11 +2,9 @@
 
 ## users
 ### columns
-|  column  |    type      |
-| -------- | ------------ |
-| name     | string       |
-| email    | varchar(256) |
-| password | varchar(16)  |
+|  column  |    type      | options |
+| -------- | ------------ | ------- |
+| name     | string       | null: false, unique: true, add_index |
 
 ### Association
 - has_many :users_groups
