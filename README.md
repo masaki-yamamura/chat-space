@@ -26,8 +26,8 @@
 ### columns
 | column |    type    |      options      |
 | ------ | ---------- | ----------------- |
-| body   | string     |                   |
-| text   | text       |                   |
+| body   | text       |                   |
+| image  | string     |                   |
 | user   | references | foreign_key: true |
 | group  | references | foreign_key: true |
 
