@@ -1,0 +1,27 @@
+.main-chat
+  .main-header
+    .header-left
+      .header-left__title
+        test-group 
+      %ul.header-left__members
+        group: 
+        %li.member 
+          name 
+    
+    .header-right
+      .header-right__button
+        =link_to "Edit"
+
+  .messages
+    = render "message"
+
+  .form
+    .new-message
+      .input-box
+        %input.input-box__text{type: 'text', placeholder: 'type a message'}
+        %label.image-label
+          %i 
+            = fa_icon "picture-o", class: "icon"
+          %input.image-label__input{type: 'file'}
+
+      %input.new-message__button{type: 'submit', value: 'Send'}

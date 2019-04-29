@@ -1,0 +1,13 @@
+.side-bar
+    .user-area
+        %h3.user-area__user-name
+            test-user
+        %ul.user-area__lists
+            %li.list
+                = fa_icon "edit" ,class: "icon"
+            %li.list 
+                = fa_icon "cog" ,class: "icon" 
+
+    .groups
+        =render "groups/group"
+        
