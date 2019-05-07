@@ -1,12 +1,14 @@
 .side-bar
     .user-area
         %h3.user-area__user-name
-            test-user
+            = current_user.name
         %ul.user-area__lists
             %li.list
-                = fa_icon "edit" ,class: "icon"
-            %li.list 
-                = fa_icon "cog" ,class: "icon" 
+                =link_to new_group_path do
+                    = fa_icon "edit", class: "icon"
+            %li.list
+                =link_to edit_user_path(current_user) do 
+                    = fa_icon "cog", class: "icon" 
 
     .groups
         =render "groups/group"
