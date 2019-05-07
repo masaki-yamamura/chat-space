@@ -1,6 +1,6 @@
 .side-bar {
   box-sizing: border-box;
-  margin:0 auto;
+  margin:0;
   color:white;
   width: 300px;
 
@@ -39,7 +39,7 @@
     overflow: auto;
 
     .group {
-      padding: 20px 0 40px;
+      padding-top: 20px;
       
       &__name {
         color: $white;
@@ -53,8 +53,8 @@
         color: $white;
         font-size:11px;
         font-weight:bold;
-
+        padding-bottom: 40px;
       }
     }
-  }
+  }   
 }

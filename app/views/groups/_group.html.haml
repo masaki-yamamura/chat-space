@@ -1,5 +1,7 @@
-.group        
-  .group__name 
-    example
-  .group__message
-    メッセージはまだありません
+.group
+  - current_user.groups.each do |group|
+    = link_to group_messages_path(group) do
+      .group__name
+        = group.name
+      .group__message
+        = group.show_last_message
