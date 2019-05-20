@@ -1,12 +1,15 @@
 .notification {
   color: $white;
+  font-size: 1rem;
+  font-weight: lighter;
   text-align: center;
+  width: 100vw;
 
-  &__alert{
+  .alert{
     background-color: $alert_orange;
   }
 
-  &__notice {
+  .notice {
     background-color: $light_blue;
   }
 }
