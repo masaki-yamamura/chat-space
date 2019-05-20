@@ -4,24 +4,16 @@
       .header-left__title
         test-group 
       %ul.header-left__members
-        group: 
-        %li.member 
-          name 
+        Member:
+        - @group.users.each do |user| 
+          %li.member 
+            = user.name 
     
     .header-right
       .header-right__button
-        =link_to "Edit","/groups/group.id/edit"
+        =link_to "Edit",edit_group_path(@group.id)
 
   .messages
-    = render "message"
+    = render @messages
 
-  .form
-    .new-message
-      .input-box
-        %input.input-box__text{type: 'text', placeholder: 'type a message'}
-        %label.image-label
-          %i 
-            = fa_icon "picture-o", class: "icon"
-          %input.image-label__input{type: 'file'}
-
-      %input.new-message__button{type: 'submit', value: 'Send'}
+  = render "messages/form"

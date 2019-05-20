@@ -40,7 +40,7 @@
     }
   }
 
-  &__field {
+  .chat-group-form__field {
     margin-top: 30px;
     &:after {
       content: "";
@@ -48,7 +48,7 @@
       display: block;
     }
 
-    &__field--left {
+    .chat-group-form__field--left {
       float: left;
       width: 30%;
       padding-right: 20px;
@@ -56,19 +56,19 @@
       box-sizing: border-box;
     }
 
-    &__field--right {
+    .chat-group-form__field--right {
       float: right;
       width: 70%;
     }
 
-    &__label {
+    .chat-group-form__label {
       display: block;
       line-height: 50px;
       font-weight: bold;
       text-align: right;
     }
 
-    &__input {
+    .chat-group-form__input {
       float: left;
       width: 100%;
       line-height: 30px;
@@ -88,11 +88,11 @@
       display: block;
     }
 
-    &__name {
+    .chat-group-user__name {
       float: left;
     }
 
-    &__btn {
+    .chat-group-user__btn {
       float: right;
       display: inline-block;
       cursor: pointer;
@@ -107,7 +107,7 @@
     }
   }
 
-  &__action-btn {
+  .chat-group-form__action-btn {
     display: inline-block;
     padding: 12px 20px;
     color: #fff;
