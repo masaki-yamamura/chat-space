@@ -2,7 +2,7 @@
   .main-header
     .header-left
       .header-left__title
-        test-group 
+        = @group.name 
       %ul.header-left__members
         Member:
         - @group.users.each do |user| 
